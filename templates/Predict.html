@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predict</title>
+</head>
+<body style="text-align:center; font-family:Arial;">
+    <h2>Intrusion Detection - Test Data Prediction</h2>
+    <form action="{{ url_for('PredictAction') }}" method="post">
+        <input type="submit" value="Run Detection on Test Data">
+    </form>
+    <br>
+    <div>
+        {{ data|safe }}
+    </div>
+    <a href="{{ url_for('home') }}">Back to Home</a>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cyber Attack Detection</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div style="text-align:center;">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" height="60">
+        <h2>Welcome to Cyber Attack Detection System</h2>
+        <a href="{{ url_for('Predict') }}">Start Detection</a>
+    </div>
+</body>
+</html>

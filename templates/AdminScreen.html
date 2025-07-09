@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+</head>
+<body style="font-family:Arial;">
+    <h2 style="text-align:center;">Prediction Results</h2>
+    <div style="margin:auto; width:90%;">
+        {{ data|safe }}
+    </div>
+    <br>
+    <div style="text-align:center;">
+        <a href="{{ url_for('Predict') }}">Run Another Prediction</a><br>
+        <a href="{{ url_for('home') }}">Back to Home</a>
+    </div>
+</body>
+</html>
